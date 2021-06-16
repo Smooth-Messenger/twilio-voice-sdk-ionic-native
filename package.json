@@ -1,0 +1,19 @@
+{
+  "name": "@ionic-native/cordova-plugin-twiliovoicesdk",
+  "version": "1.0.0",
+  "description": "wrapper for cordova-plugin-twiliovoicesdk package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahulserver/cordova-plugin-twiliovoicesdk-wrapper.git"
+  },
+  "author": "rahulserver",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahulserver/cordova-plugin-twiliovoicesdk-wrapper/issues"
+  },
+  "homepage": "https://github.com/rahulserver/cordova-plugin-twiliovoicesdk-wrapper#readme"
+}
