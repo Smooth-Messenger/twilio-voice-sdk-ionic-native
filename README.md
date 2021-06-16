@@ -5,7 +5,11 @@ This is a plugin generated using the ionic-native repo's DEVELOPER.md instructio
 To use this plugin in your capacitor project, simply add this dependency in your `package.json`
 
 `"@ionic-native/cordova-plugin-twiliovoicesdk": "https://github.com/rahulserver/cordova-plugin-twiliovoicesdk-wrapper.git"`
-
+Then install the original plugin like:
+```
+npm install --save cordova-plugin-twiliovoicesdk
+npx cap sync
+```
 And then to use it, import it using:
 
 ` import { CordovaPluginTwilioVoiceSdk } from '@ionic-native/cordova-plugin-twiliovoicesdk';`
