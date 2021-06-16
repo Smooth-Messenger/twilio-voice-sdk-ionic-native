@@ -1,0 +1,41 @@
+import { __extends } from "tslib";
+/**
+ * This is a template for new plugin wrappers
+ *
+ * TODO:
+ * - Add/Change information below
+ * - Document usage (importing, executing main functionality)
+ * - Remove any imports that you are not using
+ * - Remove all the comments included in this template, EXCEPT the @Plugin wrapper docs and any other docs you added
+ * - Remove this note
+ *
+ */
+import { Injectable } from '@angular/core';
+import { IonicNativePlugin, checkAvailability } from '@ionic-native/core';
+var CordovaPluginTwilioVoiceSdk = /** @class */ (function (_super) {
+    __extends(CordovaPluginTwilioVoiceSdk, _super);
+    function CordovaPluginTwilioVoiceSdk() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    CordovaPluginTwilioVoiceSdk.prototype.load = function (arg1, arg2) {
+        var _this = this;
+        return (function () {
+            if (checkAvailability(_this) === true) {
+                return; // We add return; here to avoid any IDE / Compiler errors
+            }
+        })();
+    };
+    CordovaPluginTwilioVoiceSdk.pluginName = "cordova-plugin-twiliovoicesdk";
+    CordovaPluginTwilioVoiceSdk.plugin = "cordova-plugin-twiliovoicesdk";
+    CordovaPluginTwilioVoiceSdk.pluginRef = "twiliovoicesdk";
+    CordovaPluginTwilioVoiceSdk.repo = "https://github.com/jefflinwood/cordova-plugin-twiliovoicesdk.git";
+    CordovaPluginTwilioVoiceSdk.install = "";
+    CordovaPluginTwilioVoiceSdk.installVariables = [];
+    CordovaPluginTwilioVoiceSdk.platforms = ["Android", "iOS", "Web"];
+    CordovaPluginTwilioVoiceSdk.decorators = [
+        { type: Injectable }
+    ];
+    return CordovaPluginTwilioVoiceSdk;
+}(IonicNativePlugin));
+export { CordovaPluginTwilioVoiceSdk };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi9zcmMvQGlvbmljLW5hdGl2ZS9wbHVnaW5zL2NvcmRvdmEtcGx1Z2luLXR3aWxpb3ZvaWNlc2RrL25neC9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUE7Ozs7Ozs7Ozs7R0FVRztBQUNILE9BQU8sRUFBRSxVQUFVLEVBQUUsTUFBTSxlQUFlLENBQUM7QUFDM0MsT0FBTyx3Q0FBK0YsTUFBTSxvQkFBb0IsQ0FBQzs7SUFrQ2hGLCtDQUFpQjs7OztJQVNoRSwwQ0FBSSxhQUFDLElBQVksRUFBRSxJQUFZOzs7bURBQWdCO2dCQUM3QyxPQUFPLENBQUMseURBQXlEO2FBQ2xFOzs7Ozs7Ozs7OztnQkFaRixVQUFVOztzQ0E3Q1g7RUE4Q2lELGlCQUFpQjtTQUFyRCwyQkFBMkIiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIFRoaXMgaXMgYSB0ZW1wbGF0ZSBmb3IgbmV3IHBsdWdpbiB3cmFwcGVyc1xuICpcbiAqIFRPRE86XG4gKiAtIEFkZC9DaGFuZ2UgaW5mb3JtYXRpb24gYmVsb3dcbiAqIC0gRG9jdW1lbnQgdXNhZ2UgKGltcG9ydGluZywgZXhlY3V0aW5nIG1haW4gZnVuY3Rpb25hbGl0eSlcbiAqIC0gUmVtb3ZlIGFueSBpbXBvcnRzIHRoYXQgeW91IGFyZSBub3QgdXNpbmdcbiAqIC0gUmVtb3ZlIGFsbCB0aGUgY29tbWVudHMgaW5jbHVkZWQgaW4gdGhpcyB0ZW1wbGF0ZSwgRVhDRVBUIHRoZSBAUGx1Z2luIHdyYXBwZXIgZG9jcyBhbmQgYW55IG90aGVyIGRvY3MgeW91IGFkZGVkXG4gKiAtIFJlbW92ZSB0aGlzIG5vdGVcbiAqXG4gKi9cbmltcG9ydCB7IEluamVjdGFibGUgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcbmltcG9ydCB7IFBsdWdpbiwgQ29yZG92YUNoZWNrLCBDb3Jkb3ZhUHJvcGVydHksIENvcmRvdmFJbnN0YW5jZSwgSW5zdGFuY2VQcm9wZXJ0eSwgSW9uaWNOYXRpdmVQbHVnaW4gfSBmcm9tICdAaW9uaWMtbmF0aXZlL2NvcmUnO1xuaW1wb3J0IHsgT2JzZXJ2YWJsZSB9IGZyb20gJ3J4anMnO1xuXG4vKipcbiAqIEBuYW1lIGNvcmRvdmEtcGx1Z2luLXR3aWxpb3ZvaWNlc2RrXG4gKiBAZGVzY3JpcHRpb25cbiAqIFRoaXMgcGx1Z2luIGRvZXMgc29tZXRoaW5nXG4gKlxuICogQHVzYWdlXG4gKiBgYGB0eXBlc2NyaXB0XG4gKiBpbXBvcnQgeyBjb3Jkb3ZhLXBsdWdpbi10d2lsaW92b2ljZXNkayB9IGZyb20gJ0Bpb25pYy1uYXRpdmUvY29yZG92YS1wbHVnaW4tdHdpbGlvdm9pY2VzZGsnO1xuICpcbiAqXG4gKiBjb25zdHJ1Y3Rvcihwcml2YXRlIGNvcmRvdmEtcGx1Z2luLXR3aWxpb3ZvaWNlc2RrOiBjb3Jkb3ZhLXBsdWdpbi10d2lsaW92b2ljZXNkaykgeyB9XG4gKlxuICogLi4uXG4gKlxuICpcbiAqIHRoaXMuY29yZG92YS1wbHVnaW4tdHdpbGlvdm9pY2VzZGsuZnVuY3Rpb25OYW1lKCdIZWxsbycsIDEyMylcbiAqICAgLnRoZW4oKHJlczogYW55KSA9PiBjb25zb2xlLmxvZyhyZXMpKVxuICogICAuY2F0Y2goKGVycm9yOiBhbnkpID0+IGNvbnNvbGUuZXJyb3IoZXJyb3IpKTtcbiAqXG4gKiBgYGBcbiAqL1xuQFBsdWdpbih7XG4gIHBsdWdpbk5hbWU6ICdjb3Jkb3ZhLXBsdWdpbi10d2lsaW92b2ljZXNkaycsXG4gIHBsdWdpbjogJ2NvcmRvdmEtcGx1Z2luLXR3aWxpb3ZvaWNlc2RrJywgLy8gbnBtIHBhY2thZ2UgbmFtZSwgZXhhbXBsZTogY29yZG92YS1wbHVnaW4tY2FtZXJhXG4gIHBsdWdpblJlZjogJ3R3aWxpb3ZvaWNlc2RrJywgLy8gdGhlIHZhcmlhYmxlIHJlZmVyZW5jZSB0byBjYWxsIHRoZSBwbHVnaW4sIGV4YW1wbGU6IG5hdmlnYXRvci5nZW9sb2NhdGlvblxuICByZXBvOiAnaHR0cHM6Ly9naXRodWIuY29tL2plZmZsaW53b29kL2NvcmRvdmEtcGx1Z2luLXR3aWxpb3ZvaWNlc2RrLmdpdCcsIC8vIHRoZSBnaXRodWIgcmVwb3NpdG9yeSBVUkwgZm9yIHRoZSBwbHVnaW5cbiAgaW5zdGFsbDogJycsIC8vIE9QVElPTkFMIGluc3RhbGwgY29tbWFuZCwgaW4gY2FzZSB0aGUgcGx1Z2luIHJlcXVpcmVzIHZhcmlhYmxlc1xuICBpbnN0YWxsVmFyaWFibGVzOiBbXSwgLy8gT1BUSU9OQUwgdGhlIHBsdWdpbiByZXF1aXJlcyB2YXJpYWJsZXNcbiAgcGxhdGZvcm1zOiBbJ0FuZHJvaWQnLCAnaU9TJywgJ1dlYiddIC8vIEFycmF5IG9mIHBsYXRmb3JtcyBzdXBwb3J0ZWQsIGV4YW1wbGU6IFsnQW5kcm9pZCcsICdpT1MnXVxufSlcbkBJbmplY3RhYmxlKClcbmV4cG9ydCBjbGFzcyBDb3Jkb3ZhUGx1Z2luVHdpbGlvVm9pY2VTZGsgZXh0ZW5kcyBJb25pY05hdGl2ZVBsdWdpbiB7XG5cbiAgLyoqXG4gICAqIFRoaXMgZnVuY3Rpb24gZG9lcyBzb21ldGhpbmdcbiAgICogQHBhcmFtIGFyZzEge3N0cmluZ30gU29tZSBwYXJhbSB0byBjb25maWd1cmUgc29tZXRoaW5nXG4gICAqIEBwYXJhbSBhcmcyIHtudW1iZXJ9IEFub3RoZXIgcGFyYW0gdG8gY29uZmlndXJlIHNvbWV0aGluZ1xuICAgKiBAcmV0dXJuIHtQcm9taXNlPGFueT59IFJldHVybnMgYSBwcm9taXNlIHRoYXQgcmVzb2x2ZXMgd2hlbiBzb21ldGhpbmcgaGFwcGVuc1xuICAgKi9cbiAgQENvcmRvdmFDaGVjaygpXG4gIGxvYWQoYXJnMTogc3RyaW5nLCBhcmcyOiBudW1iZXIpOiBQcm9taXNlPGFueT4ge1xuICAgIHJldHVybjsgLy8gV2UgYWRkIHJldHVybjsgaGVyZSB0byBhdm9pZCBhbnkgSURFIC8gQ29tcGlsZXIgZXJyb3JzXG4gIH1cblxufVxuIl19
