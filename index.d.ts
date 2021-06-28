@@ -13,7 +13,7 @@ import { IonicNativePlugin } from '@ionic-native/core';
  * await this.CordovaPluginTwilioVoiceSdk.load();
  * ```
  */
-export declare class CordovaPluginTwilioVoiceSdk extends IonicNativePlugin {
+export declare class CordovaPluginTwilioVoiceSdkOriginal extends IonicNativePlugin {
     /**
      * This function waits for the plugin to load and eventually adds window.Twilio to the global window object
      * It does NOT do any additional steps needed to configure the plugin vars. refer plugin docs to follow platform
@@ -22,3 +22,5 @@ export declare class CordovaPluginTwilioVoiceSdk extends IonicNativePlugin {
      */
     load(): Promise<any>;
 }
+
+export declare const CordovaPluginTwilioVoiceSdk: CordovaPluginTwilioVoiceSdkOriginal;
