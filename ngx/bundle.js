@@ -11,21 +11,14 @@ var CordovaPluginTwilioVoiceSdk = /** @class */ (function (_super) {
     function CordovaPluginTwilioVoiceSdk() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    CordovaPluginTwilioVoiceSdk.prototype.load = function (arg1, arg2) {
-        var _this = this;
-        return (function () {
-            if (core.checkAvailability(_this) === true) {
-                return; // We add return; here to avoid any IDE / Compiler errors
-            }
-        })();
-    };
+    CordovaPluginTwilioVoiceSdk.prototype.load = function () { return core.cordova(this, "load", {}, arguments); };
     CordovaPluginTwilioVoiceSdk.pluginName = "cordova-plugin-twiliovoicesdk";
     CordovaPluginTwilioVoiceSdk.plugin = "cordova-plugin-twiliovoicesdk";
     CordovaPluginTwilioVoiceSdk.pluginRef = "twiliovoicesdk";
     CordovaPluginTwilioVoiceSdk.repo = "https://github.com/jefflinwood/cordova-plugin-twiliovoicesdk.git";
     CordovaPluginTwilioVoiceSdk.install = "";
     CordovaPluginTwilioVoiceSdk.installVariables = [];
-    CordovaPluginTwilioVoiceSdk.platforms = ["Android", "iOS", "Web"];
+    CordovaPluginTwilioVoiceSdk.platforms = ["Android", "iOS"];
     CordovaPluginTwilioVoiceSdk.decorators = [
         { type: core$1.Injectable }
     ];
