@@ -20,5 +20,10 @@ export declare class CordovaPluginTwilioVoiceSdk extends IonicNativePlugin {
      * specific configurations
      * @return {Promise<any>} Returns a promise that resolves when plugin loads and we have a window.Twilio
      */
+    create(): TwilioVoiceSDKObject;
+}
+export declare class TwilioVoiceSDKObject {
+    private _objectInstance;
+    constructor();
     load(): Promise<any>;
 }
